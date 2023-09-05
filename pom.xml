@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.khandras</groupId>
-	<artifactId>bot</artifactId>
+	<artifactId>tasks</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bot</name>
-	<description>Bot service for tasks app</description>
+	<name>tasks</name>
+	<description>Tasks app</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
