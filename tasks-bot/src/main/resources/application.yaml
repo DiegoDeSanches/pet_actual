@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+bot:
+  token: ${BOT_TOKEN}
+  username: ${BOT_USERNAME}
+
+  mode: LONG_POLLING
