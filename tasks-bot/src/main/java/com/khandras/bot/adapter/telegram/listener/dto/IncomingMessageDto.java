@@ -1,4 +1,4 @@
-package com.khandras.bot.adapter.listener.dto;
+package com.khandras.bot.adapter.telegram.listener.dto;
 
 import lombok.Getter;
 import org.telegram.telegrambots.meta.api.objects.Chat;

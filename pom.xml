@@ -5,26 +5,34 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.3</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>3.1.1</version>
+		<relativePath/>
 	</parent>
+
 	<groupId>com.khandras</groupId>
 	<artifactId>tasks</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>CURRENT</version>
 	<packaging>pom</packaging>
 	<name>tasks</name>
 	<description>Tasks app</description>
+
 	<modules>
 		<module>tasks-bot</module>
 	</modules>
+
 	<properties>
 		<java.version>17</java.version>
 		<telegrambots.version>5.7.0</telegrambots.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.datatype</groupId>
@@ -69,5 +77,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

@@ -5,6 +5,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import java.io.IOException;
 
-public interface ActionService {
-    void handleMessage(IncomingMessageDto dto) throws IOException, TelegramApiException;
+public interface MessageHandler {
+    boolean canHandle(IncomingMessageDto dto);
+    void handle(IncomingMessageDto dto) throws TelegramApiException, IOException;
 }

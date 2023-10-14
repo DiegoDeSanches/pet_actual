@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  tasks-bot-postgres:
+    image: postgres:15
+    volumes:
+      - /var/pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: "db"
+      POSTGRES_USER: "user"
+      POSTGRES_PASSWORD: "pass"
+    ports:
+      - "5555:5432"
