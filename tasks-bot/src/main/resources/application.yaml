@@ -1,7 +1,13 @@
 server:
-  port: 8080
+  port: 8083
+
+grpc:
+  port: 9090
 
 spring:
+  mail:
+    properties:
+      "mail.smtp.ssl.enable": true
   session:
     jdbc:
       initialize-schema: always
@@ -22,8 +28,17 @@ bot:
   username: ${BOT_USERNAME}
   mode: LONG_POLLING
 
+mail:
+  host: ${MAIL_SERVER_HOST}
+  port: ${MAIL_SERVER_PORT}
+  username: ${MAIL_USER}
+  password: ${MAIL_PASS}
+  content:
+    bot-name: "Bot tasks"
+    subject: "received new message"
+
 logging:
   level:
-    ROOT: ${LOG_LEVEL}
+    ROOT: ${LOG_LEVEL:INFO}
   file:
-    name: 'bot.log'
+    name: 'logs/bot.log'

@@ -1,0 +1,12 @@
+CREATE TYPE INFO_TYPE AS ENUM ('PHOTO', 'DOCUMENT', 'TEXT', 'AUDIO');
+CREATE CAST (CHARACTER VARYING as INFO_TYPE) WITH INOUT AS IMPLICIT;
+
+CREATE TABLE SAVED_INFO
+(
+    INFO_ID                         UUID PRIMARY KEY,
+    USER_INFO_TELEGRAM_ID           VARCHAR(32),
+    SAVE_DATE_TIME                  TIMESTAMP(3),
+    INFO_TYPE                       INFO_TYPE,
+    RECORD_NAME                     VARCHAR(4096),
+    SAVED_INFO                      BYTEA
+);

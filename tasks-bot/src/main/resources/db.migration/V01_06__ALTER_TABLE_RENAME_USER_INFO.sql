@@ -1,0 +1,1 @@
+alter table IF EXISTS user_info rename to "user";

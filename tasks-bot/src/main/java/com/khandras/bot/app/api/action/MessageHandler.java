@@ -7,5 +7,6 @@ import java.io.IOException;
 
 public interface MessageHandler {
     boolean canHandle(IncomingMessageDto dto);
+
     void handle(IncomingMessageDto dto) throws TelegramApiException, IOException;
 }

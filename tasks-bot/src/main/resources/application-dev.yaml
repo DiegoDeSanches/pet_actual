@@ -1,8 +1,21 @@
 bot:
-  token: 'need override'
-  username: 'need override'
+  token: # todo set your
+  username: # todo set your
+
+mail:
+  host: # todo set your
+  port: # todo set your
+  username: # todo set your
+  password: # todo set your
+
+server:
+  port: 8083
 
 spring:
+  main:
+    allow-bean-definition-overriding: true
+  jmx:
+    enabled: false
   cache:
     type: NONE
   datasource:
@@ -14,5 +27,6 @@ spring:
 logging:
   level:
     ROOT: INFO
-#    org.hibernate.SQL: DEBUG
-#    org.hibernate.type: TRACE
+management:
+  server:
+    port: 8083

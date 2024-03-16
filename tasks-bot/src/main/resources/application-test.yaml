@@ -1,0 +1,12 @@
+server:
+  port: 8083
+
+spring:
+  main:
+    lazy-initialization: true
+  datasource:
+    url: jdbc:tc:postgresql:15:///kek
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+  jpa:
+    hibernate:
+      ddl-auto: create
