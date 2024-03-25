@@ -19,7 +19,7 @@
 	<modules>
 		<module>tasks-bot</module>
 		<module>proto-common</module>
-        <module>grpc-requests</module>
+        <module>rest2grpc-bot-adapter</module>
     </modules>
 
 	<properties>
